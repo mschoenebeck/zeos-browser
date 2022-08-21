@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>ZEOS Browser</title>
+<script>
+fetch("https://kylin-dsp-1.liquidapps.io/v1/dsp/liquidstorag/get_uri", {
+  method: "POST",
+  mode: 'no-cors',
+  headers: {'Content-Type': 'application/json'}, 
+  body: JSON.stringify({ uri: "ipfs://zb2rhgmGdS3KzK5GXxEmebeEuR113wKTja2VQr4V5XSwaq1Pm" })
+}).then(res => {
+  console.log("Request complete! response:", res);
+});
+</script>
+</head>
+<body>
+</body>
+</html>
